@@ -1,0 +1,230 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* navigation bar */
+#nav {
+  position: fixed;
+  display: flex;
+  z-index: 10;
+}
+#nav::before {
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  /* top: 0px; */
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* navbar logo */
+#nav img {
+  height: 60px;
+  border: 0px;
+  margin: 10px 5px;
+}
+/* #nav {
+  margin: 3px;
+} */
+
+/* menu */
+#nav ul {
+  display: flex;
+  margin: 20px 0px;
+}
+#nav ul li {
+  font-size: 1.6rem;
+  list-style: none;
+  font-family: "Baloo 2", cursive;
+}
+
+#nav ul li a {
+  transition: all 1s ease-in-out 0.01s;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 0px 25px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+}
+#nav ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* utility classes */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.center {
+  text-align: center;
+}
+.h-secondary {
+  font-size: 2.2rem;
+  padding: 12px;
+}
+.btn {
+  font-family: "Baloo 2", cursive;
+  background: rgb(203 68 68 / 50%);
+  border-radius: 13px;
+  font-size: 1.4rem;
+  color: #3d2c2b;
+  border: 2px solid white;
+  cursor: pointer;
+  padding: 2px 12px;
+  /* font-style: italic; */
+  margin: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Home section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 33px;
+  height: 94vh;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+#home p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  background: url(../img/bg1.jpg) no-repeat no-repeat center center/cover;
+  /* background-size: 96rem 58rem; */
+  opacity: 0.89;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.btn:hover {
+  background: rgb(247, 184, 184);
+  border: 2px solid rgb(73, 5, 5);
+  color: black;
+  transform: scale(1.5);
+}
+/* Services Container */
+
+#services {
+  display: flex;
+  margin: 40px;
+}
+#services .box {
+  font-family: "Baloo 2", cursive;
+  border: 2px solid brown;
+  margin: 8px;
+  border-radius: 30px;
+  padding: 28px;
+  background-color: #fffdf8;
+  transition: transform 0.2s;
+  margin-bottom: 35px;
+}
+
+.box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+.services-container {
+  background-color: #f3eee5;
+  position: relative;
+  /* height: 240vh; */
+  font-family: "Baloo 2", cursive;
+}
+.services-container h1 {
+  font-family: "Baloo 2", cursive;
+  position: relative;
+  top: 20px;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+/* client section */
+#client-section::before {
+  content: "";
+  /* background: url(../img/bg.jpg) no-repeat no-repeat center center/cover; */
+  /* background-size: 100rem 72rem; */
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  top: 1246px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+  overflow: hidden;
+}
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.client-item {
+  margin: 4px 18px;
+}
+.clients img {
+  height: 150px;
+}
+#client-section{
+  height: 51vh;
+}
+/* contact section */
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('../img/contact.jpg') no-repeat no-repeat center center/cover;
+}
+#contact{
+  position: relative;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Baloo 2", cursive;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+#contact-box{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-bottom: 34px;
+    width: 50vw;
+    margin: auto;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: "Baloo 2", cursive;
+
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}

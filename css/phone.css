@@ -1,0 +1,98 @@
+/* Navigation bar */
+#nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav ul li {
+  font-size: 4.9vw;
+  list-style: none;
+  font-family: "Baloo 2", cursive;
+}
+
+#nav ul li a {
+  transition: all 1s ease-in-out 0.01s;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 0px 3.27vw;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+}
+
+#nav img {
+  position: relative;
+  top: 14px;
+  height: 60px;
+  border: 0px;
+  margin: 10px 5px;
+}
+
+/* home section*/
+#home {
+  height: 370px;
+}
+#home::before {
+  height: 641px;
+}
+#home P {
+  font-size: 1.1rem;
+  text-align: center;
+}
+/* services section  */
+#services {
+  flex-direction: column;
+}
+#services .box {
+  margin: 8px 0px;
+}
+
+.box img {
+  height: 31vw;
+  display: block;
+  margin: auto;
+}
+
+/* client section */
+.clients {
+  flex-wrap: wrap;
+}
+
+/* #client-section {
+    content: "";
+    background: url(../img/bg.jpg) no-repeat no-repeat center center/cover; */
+    /* background-size: 100rem 72rem; */
+    /* height: 51%; */
+    /* width: 100%;
+    position: absolute;
+    /* top: 1246px; */
+    /* left: 0px; */
+    /* z-index: -1; */
+    /* opacity: 0.4; */ */
+    /* overflow: hidden;
+  } */
+  
+#client-section h1 {
+  margin-top: -46px;
+  position: relative;
+  top: 14px;
+  margin-bottom: 35px;
+}
+.clients img {
+  height: 4rem;
+}
+/* contact section */
+#contact-box {
+  width: 76vw;
+}
+/* utility classes */
+.h-primary {
+  font-size: 7.2vw;
+  padding: 12px;
+}
+.h-secondary {
+  font-size: 5vw;
+  padding: 12px;
+}
